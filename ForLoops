@@ -37,7 +37,172 @@ for i in range(1,(range_entered+1)):
   print(i)
 
 #Q8
-for y in range(10,0,-1):
+for y in range(10,-1,-1):
   print(y)
   time.sleep(1)
 print("Blast off!")
+
+
+#Exercise 4.2
+#Q1
+word = input("Enter a word: ")
+for i in word:
+  print(i)
+
+word = input("Enter a word: ")
+for i in range(len(word)):
+  print(word[i])
+
+#Q2
+word = input("Enter a word: ")
+for i in word:
+  print("Letter: ",i,"  Index: ",word.index(i))
+
+word = input("Enter a word: ")
+for i in range(len(word)):
+  print("Letter: ",word[i],"  Index: ",x)
+
+#Q3
+word1 = input("Enter a word: ")
+word2 = input("Enter another word: ")
+new_word = word1+word2
+count=0
+for i in new_word:
+  if i=="e":
+    count+=1
+  else:
+    count+=0
+print(count)
+
+word1 = input("Enter a word: ")
+word2 = input("Enter another word: ")
+new_word = word1+word2
+count=0
+for i in range(len(new_word)):
+  if new_word[i]=="e":
+    count+=1
+  else:
+    count+=0
+print(count)
+
+#Q4
+word1 = input("Enter a word: ")
+count=0
+for i in word1:
+  if i=="a":
+    count+=5
+  elif i =="e":
+    count+=4
+  elif i =="i":
+    count+=3
+  elif i =="o":
+    count+=2
+  elif i =="u":
+    count+=1
+  else:
+    count+=0
+print(count)
+
+word1 = input("Enter a word: ")
+count=0
+for i in range(len(word1)):
+  if word1[i]=="a":
+    count+=5
+  elif word1[i] =="e":
+    count+=4
+  elif word1[i] =="i":
+    count+=3
+  elif word1[i] =="o":
+    count+=2
+  elif word1[i] =="u":
+    count+=1
+  else:
+    count+=0
+print(count)
+
+
+#Q5
+password = input("Enter a password: ")
+count=0
+for i in password:
+  if i.isdigit():
+    count+=1
+  else:
+    count+=0
+print(count)
+
+password = input("Enter a password: ")
+count=0
+for i in range(len(password)):
+  if password[i].isdigit():
+    count+=1
+  else:
+    count+=0
+print(count)
+
+
+#Ex4.3
+#Q1 
+vowels = "aeiou"
+word=input("Enter input")
+new_word = ""
+for i in word: 
+  if i not in vowels: 
+    new_word += i
+  else:
+    continue 
+print(new_word)
+
+
+word=input("Enter input: ")
+new_word = ""
+for i in word: 
+  if i == "a": 
+    continue
+  elif i == "e":
+    continue
+  elif i == "i": 
+    continue
+  elif i == "o":
+    continue
+  elif i == "u": 
+    continue
+  else:
+    new_word+=i 
+print(new_word)
+
+#Q2
+string = input("Enter a string: ")
+new_string=""
+for i in string:
+  if i.isdigit() == False:
+    new_string+=i
+  else:
+    continue
+print(new_string)
+
+
+#Q3
+string = input("Enter a string: ")
+new_string=""
+for i in string:
+  if i=="a":
+    i=i.replace("a","x")
+    new_string+=i
+  else:
+    new_string+=i
+print(new_string)
+
+#Q4
+word=input("Enter input: ")
+new_word = ""
+for i in word: 
+    new_word = i + new_word
+print(new_word)
+
+#Q5
+word=input("Enter input: ")
+new_word = ""
+for i in range(0,len(word),2):
+  new_word +=word[i]
+print(new_word)
